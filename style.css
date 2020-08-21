@@ -486,6 +486,10 @@ footer {
       font-family: PopSemiBold;
     }
 
+    footer a, footer h3{
+      display: none;
+    }
+
     button{
       height: 5vh;
       background: orange;
@@ -495,6 +499,11 @@ footer {
       grid-column: 2/3;
       align-self: center;
       justify-self: center;
+      width: 80vw;
+      max-width: 80vw;
+      height: 50px;
+      max-height: 50px;
+      padding: 10px;
     }
 
     .balaurl{
@@ -517,17 +526,18 @@ footer {
       display: none;
     }
 
+
+    
     .logo{
       font-size: 20px;
-      font-family: PopSemiBold;
     }
     
     .textcontent h1{
-      font-size: 1em;
-      font-family: PopSemiBold;
+      font-size: 21px;
+      font-family: PopRegular;
     }
     .textcontent h3{
-      font-size: 1em;
-      font-family: PopSemiBold;
+      font-size: 17px;
+      font-family: PopRegular;
     }
 }
