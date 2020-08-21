@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gallery.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="/path/to/my.css" as="style">
+  <link rel="stylesheet" href="/path/to/my.css" media="print" onload="this.media='all'">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>gallery</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><h3 class="left">back home</h3></a>
+    <!-- <h3 class="logo">mihai bălan</h3> -->
+    <img class="logo" src="./logo.png" alt="">
+    <a href="contact.html"><h3 class="right">contact me</h3></a>
+  </header>
+
+  <!-- SIDE NAV -->
+
+  <div class="balaurl">
+    <a href="https://www.instagram.com/balauru.35mm/"><h3 >@balauru.35mm</h3></a>
+  </div>
+
+  <div class="title">
+  <h3 class="title">bonafide</h1>
+  </div>
+
+      <div class="gallery-section" data-aos="fade-up"
+      data-aos-offset="1"
+      data-aos-duration="2000" id="gallery">
+        <div class="inner-width">
+          <h1>Latest developed film
+            //D018
+            shot on Fujifilm 200
+            with Yashica T3
+          </h1>
+          <div class="gallery">
+  
+            <a href="./lightbox/1.JPG" class="image">
+              <img src="./preview/1.JPG" alt="">
+            </a>
+
+            <a href="./lightbox/2.JPG" class="image">
+              <img src="./preview/2.JPG" alt="">
+            </a>
+            <a href="./lightbox/3.JPG" class="image">
+              <img src="./preview/3.JPG" alt="">
+            </a>
+            <a href="./lightbox/4.JPG" class="image">
+              <img src="./preview/4.JPG" alt="">
+            </a>
+            <a href="./lightbox/5.JPG" class="image">
+              <img src="./preview/5.JPG" alt="">
+            </a>
+            <a href="./lightbox/6.JPG" class="image">
+              <img src="./preview/6.JPG" alt="">
+            </a>
+            <a href="./lightbox/7.JPG" class="image">
+              <img src="./preview/7.JPG" alt="">
+            </a>
+            <a href="./lightbox/8.JPG" class="image">
+              <img src="./preview/8.JPG" alt="">
+            </a>
+            <a href="./lightbox/9.JPG" class="image">
+              <img src="./preview/9.JPG" alt="">
+            </a>
+            <a href="./lightbox/10.JPG" class="image">
+              <img src="./preview/10.JPG" alt="">
+            </a>
+            <a href="./lightbox/11.JPG" class="image">
+              <img src="./preview/11.JPG" alt="">
+            </a>
+            <a href="./lightbox/12.JPG" class="image">
+              <img src="./preview/12.JPG" alt="">
+            </a>
+            <a href="./lightbox/13.JPG" class="image">
+              <img src="./preview/13.JPG" alt="">
+            </a>
+            <!-- <a href="./lightbox/14.JPG" class="image">
+              <img src="./preview/14.JPG" alt="">
+            </a> -->
+            <a href="./lightbox/15.JPG" class="image">
+              <img src="./preview/15.JPG" alt="">
+            </a>
+            <a href="./lightbox/16.JPG" class="image">
+              <img src="./preview/16.JPG" alt="">
+            </a>
+            <a href="./lightbox/17.JPG" class="image">
+              <img src="./preview/17.JPG" alt="">
+            </a>
+            <a href="./lightbox/18.JPG" class="image">
+              <img src="./preview/18.JPG" alt="">
+            </a>
+            <a href="./lightbox/19.JPG" class="image">
+              <img src="./preview/19.JPG" alt="">
+            </a>
+            <!-- <a href="./lightbox/20.JPG" class="image">
+              <img src="./preview/20.JPG" alt="">
+            </a> -->
+            <a href="./lightbox/21.JPG" class="image">
+              <img src="./preview/21.JPG" alt="">
+            </a>
+            <a href="./lightbox/22.JPG" class="image">
+              <img src="./preview/22.JPG" alt="">
+            </a>
+            <a href="./lightbox/23.JPG" class="image">
+              <img src="./preview/23.JPG" alt="">
+            </a>
+            <a href="./lightbox/24.JPG" class="image">
+              <img src="./preview/24.JPG" alt="">
+            </a>
+            <a href="./lightbox/25.JPG" class="image">
+              <img src="./preview/25.JPG" alt="">
+            </a>
+            <a href="./lightbox/26.JPG" class="image">
+              <img src="./preview/26.JPG" alt="">
+            </a>
+            <a href="./lightbox/27.JPG" class="image">
+              <img src="./preview/27.JPG" alt="">
+            </a>
+            <a href="./lightbox/28.JPG" class="image">
+              <img src="./preview/28.JPG" alt="">
+            </a>
+            <a href="./lightbox/29.JPG" class="image">
+              <img src="./preview/29.JPG" alt="">
+            </a>
+          </div>
+          <a href="#gallery"><h3 class="backtop">thank you. back to the top</h3></a>
+        </div>
+      </div>
+
+
+    <script>
+      $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled: true
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

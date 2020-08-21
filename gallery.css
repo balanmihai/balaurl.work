@@ -1,0 +1,224 @@
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background: #C4C4C4;
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+@font-face{
+  font-family: PopLight;
+  src: url('./fonts/Poppins-ExtraLight.ttf');
+}
+@font-face{
+  font-family: PopRegular;
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+@font-face{
+  font-family: PopMediumItalic;
+  src: url('./fonts/Poppins-MediumItalic.ttf');
+}
+
+@font-face{
+  font-family: PopSemiBold;
+  src: url('./fonts/Poppins-SemiBold.ttf');
+}
+
+body{
+  font-family: PopLight;
+  cursor:url('images/cursor.png'), auto;
+}
+
+/* NO SCROLLBAR YET FUNCTIONAL */
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h3, a{
+  font-family: PopRegular;
+  text-decoration: none;
+  color: #333533;
+}
+
+a:hover, h3:hover, h1:hover{
+  color: orange;
+}
+
+
+.balaurl{
+  display: grid;
+  align-content:center;
+  justify-content: center;
+  position: fixed;
+  left: -3.5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.balaurl a{
+  transform: rotate(-90deg);
+}
+
+.right{
+  position: fixed;
+  top: 1%;
+  right: 1%;
+}
+
+.left{
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+
+header {
+  height: 10vh;
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 20px 0px; */
+}
+
+
+.logo{
+  position: sticky;
+  width: 100px;
+  top: -1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gallery a{
+  margin: 15px;
+}
+
+.gallery-section{
+  width: 100%;
+  padding: 50px 0;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.title{
+  position: fixed;
+  right: -1%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title h3{
+  transform: rotate( 90deg);
+}
+
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4) rotate(-90deg);
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+
+  .title, .balaurl{
+    display: none;
+  }
+
+
+  header {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .gallery-section{
+    width: 100%;
+    padding: 0px 0px;
+
+  }
+
+  .right{
+    position: sticky;
+  }
+  
+  .left{
+    position: sticky;
+  }
+
+  .backtop{
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+  }
+
+  .page{
+    grid-template-columns: 5% 1fr 5%;
+    align-items: center;
+    grid-gap:0.2em;
+    width: 100%;
+  }
+  .photo{
+    grid-column: 2/3;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+  
+  }
+  .photo img{
+    height: 400px;
+  }
+
+
+  h3{
+    font-size: 18px;
+  }
+
+  .logo{
+    font-size: 26px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
