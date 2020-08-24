@@ -8,6 +8,7 @@ html{
   scroll-behavior: smooth;
   cursor: default;
   cursor:url('images/cursor.png'), auto;
+  overflow: hidden;
 }
 
 @font-face{
@@ -32,10 +33,6 @@ body{
   font-family: PopLight;
 }
 
-/* NO SCROLLBAR YET FUNCTIONAL */
-::-webkit-scrollbar {
-  display: none;
-}
 
 h1, h3, a{
   font-family: PopRegular;
@@ -81,6 +78,9 @@ header {
   /* padding: 20px 0px; */
 }
 
+.btncv :hover, .btngallery :hover{
+  color: #333533;
+}
 
 .logo{
   cursor: pointer;
@@ -110,6 +110,10 @@ header {
   margin: auto;
 }
 
+.textcontent1{
+  line-height: 10vh;
+}
+
 .textcontent h1{
   font-size: 4em;
   font-family: PopSemiBold;
@@ -119,21 +123,35 @@ header {
   font-family: PopSemiBold;
 }
 
+.btngallery{
+  cursor: pointer;
+  border: 1px solid #333533;
+  background: orange;
+  color: #333533;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+  padding: 10px 150px;
+}
+
 
 .photo1{
+  padding-top: 3vw;
   grid-column: 3/4;
   align-self: center;
   justify-self: center;
 }
 .photo2{
+  padding-top: 3vw;
   grid-column: 4/5;
   align-self: center;
-  justify-self: start;
+  justify-self: center;
 }
 .photo3{
+  padding-top: 3vw;
   grid-column: 5/6;
   align-self: center;
-  justify-self: start;
+  justify-self: center;
   padding-right: 5vw;
 }
 
@@ -264,20 +282,21 @@ header {
   justify-self: center;
 }
 
-button{
-  height: 5vh;
+.btncv{
+  cursor: pointer;
+  border: 1px solid #333533;
   background: orange;
-  outline: none;
-  border: none;
-  display: inline-block;
+  color: #333533;
   grid-column: 2/3;
   align-self: center;
   justify-self: center;
+  padding: 10px 100px;
 }
 
 .attributes h1{
   font-size: 4em;
   font-family: PopSemiBold;
+  line-height: 12vh;
 }
 
 .attributes h1:hover{
@@ -339,7 +358,7 @@ a:hover, h3:hover, h1:hover{
 
 /* FOOTER */
 
-footer {
+footer{
   height: 7vh;
   width: 98%;
   margin: auto;
@@ -367,6 +386,15 @@ footer {
 /* MOBILE */
 
 @media (max-width: 1024px){
+
+    html{
+      overflow: auto;
+    }
+
+    /* NO SCROLLBAR YET FUNCTIONAL */
+    ::-webkit-scrollbar {
+    display: none;
+    }
 
   .pages{
     display: grid;
@@ -452,6 +480,21 @@ footer {
       align-items: center;
     }
 
+    .btngallery{
+      cursor: pointer;
+      border: 1px solid #333533;
+      background: rgb(236, 158, 13);
+      color: #333533;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 30px;
+    }
+
+    .textcontent1{
+      line-height: 5vh;
+    }
+
     .photo1{
       grid-column: 2/3;
       align-self: center;
@@ -473,6 +516,18 @@ footer {
       align-items: center;
     }
 
+    .btncv{
+      cursor: pointer;
+      border: 1px solid #333533;
+      background: orange;
+      color: #333533;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 50px;
+    }
+    
+
     .attributes{
       width: 80%;
       grid-column: 2/4;
@@ -482,28 +537,13 @@ footer {
     }
 
     .attributes h1{
+      line-height: 8vh;
       font-size: 2em;
       font-family: PopSemiBold;
     }
 
     footer a, footer h3{
       display: none;
-    }
-
-    button{
-      height: 5vh;
-      background: orange;
-      outline: none;
-      border: none;
-      display: inline-block;
-      grid-column: 2/3;
-      align-self: center;
-      justify-self: center;
-      width: 80vw;
-      max-width: 80vw;
-      height: 50px;
-      max-height: 50px;
-      padding: 10px;
     }
 
     .balaurl{
