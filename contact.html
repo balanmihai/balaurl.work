@@ -23,10 +23,10 @@
 
     <div class="contactu">
 
-      <form id="form" class="topBefore">
-            <input id="name" type="text" placeholder="name">
-            <input id="email" type="text" placeholder="e-mail">
-            <textarea id="message" type="text" placeholder="write me something ..."></textarea>
+      <form id="form" class="topBefore" method="post" action="contact.php">
+            <input id="name" type="text" placeholder="name" required>
+            <input id="email" type="email" placeholder="e-mail" required>
+            <textarea id="message" type="message" placeholder="write me something ..." required></textarea>
         <input id="submit" type="submit" value="get in touch">
       </form>
 
