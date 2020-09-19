@@ -10,6 +10,10 @@ html{
   cursor: default;
 }
 
+header a, header h3, .title h3, .balaurl h3{
+  font-size: 24px;
+}
+
 @font-face{
   font-family: PopLight;
   src: url('./fonts/Poppins-ExtraLight.ttf');
@@ -54,7 +58,7 @@ a:hover, h3:hover, h1:hover{
   align-content:center;
   justify-content: center;
   position: fixed;
-  left: -3.5%;
+  left: -5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -112,7 +116,7 @@ header {
 
 .title{
   position: fixed;
-  right: -1%;
+  right: -2%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -153,6 +157,10 @@ header {
     display: none;
   }
 
+  
+  header a, header h3, .title h3, .balaurl h3{
+  font-size: 18px;
+  }
 
   header {
     width: 98%;
