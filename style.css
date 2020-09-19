@@ -4,6 +4,57 @@
   box-sizing: border-box;
 }
 
+
+
+
+.intro {
+  background: #333533;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background:#333533;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text h1 {
+  color: #C4C4C4;
+  font-family: "Heebo", sans-serif;
+  font-size: 5rem;
+}
+
+.hide {
+  background: #333533;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 html{
   scroll-behavior: smooth;
   cursor: default;
@@ -38,6 +89,7 @@ h1, h3, a{
   font-family: PopRegular;
   text-decoration: none;
   color: #333533;
+  font-size: 24px;
 }
 
 .first{
@@ -74,8 +126,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* padding: 20px 0px; */
 }
 
 .btncv :hover, .btngallery :hover{
@@ -271,9 +321,6 @@ header {
 }
 
 
-
-
-
 /* ABOUT */
 .attributes{
   grid-column: 2/4;
@@ -395,6 +442,16 @@ footer{
     ::-webkit-scrollbar {
     display: none;
     }
+    
+
+
+    .intro-text h1 {
+      color:#C4C4C4;
+      font-family: "Heebo", sans-serif;
+      font-size: 3rem;
+    }
+  
+
 
   .pages{
     display: grid;
@@ -402,7 +459,7 @@ footer{
     justify-content: center;
     grid-column: 5/6;
     position: fixed;
-    right: 0%;
+    right: 1%;
     top: 50%;
     transform: translateY(-50%);
     }
