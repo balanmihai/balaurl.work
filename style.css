@@ -89,13 +89,18 @@ h1, h3, a{
   font-family: PopRegular;
   text-decoration: none;
   color: #333533;
-  font-size: 24px;
 }
 
 .first{
   /* background: linear-gradient(to right, #dfdfdf 50%, #cac4c4 50%); */
   background: #C4C4C4;
 }
+
+
+header a, header h3, footer a, footer h3, .balaurl h3{
+  font-size: 24px;
+}
+
 
 .second{
   color: #333533;
@@ -445,13 +450,17 @@ footer{
     
 
 
-    .intro-text h1 {
-      color:#C4C4C4;
-      font-family: "Heebo", sans-serif;
-      font-size: 3rem;
-    }
+  .intro-text h1 {
+    color:#C4C4C4;
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+  }
   
+  header a, header h3, footer a, footer h3, .balaurl h3{
+    font-size: 1em;
+  }
 
+  
 
   .pages{
     display: grid;
