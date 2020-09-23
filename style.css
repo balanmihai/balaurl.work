@@ -46,19 +46,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
 html{
   scroll-behavior: smooth;
-  cursor: default;
-  cursor:url('images/cursor.png'), auto;
+  /* cursor: default;
+  cursor:url('images/cursor.png'), auto; */
   overflow: hidden;
 }
 
@@ -242,6 +233,7 @@ header {
 
 .poza{
   height: 60vh;
+  display: block;
 }
 
 
