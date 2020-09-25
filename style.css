@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
+.dark-mode{
+  /* filter: invert(100%); */
+  filter: invert(1) hue-rotate(180deg);
+}
 
+.invert{
+  filter: invert(1) hue-rotate(180deg);
+}
 
 
 .intro {
@@ -377,7 +384,7 @@ header {
 }
 
 
-a:hover, h3:hover, h1:hover{
+a:hover, h3:hover{
   color: orange;
 }
 
