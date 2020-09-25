@@ -18,7 +18,7 @@
   <header>
     <a href="index.html"><h3 class="left">back home</h3></a>
     <!-- <h3 class="logo">mihai bălan</h3> -->
-    <img class="logo" src="./logo.png" alt="">
+    <img class="logo inverted" src="./logo.png" alt="">
     <a href="contact.html"><h3 class="right">contact me</h3></a>
   </header>
 
@@ -41,7 +41,7 @@
             shot on Fujifilm 200
             with Yashica T3
           </h1>
-          <div class="gallery">
+          <div class="gallery inverted">
   
             <a href="./lightbox/1.JPG" class="image">
               <img src="./preview/1.JPG" alt="">
@@ -151,5 +151,18 @@
       AOS.init();
     </script>
     <script src="dist/magic_mouse.js"></script>
+
+    <script>
+      document.onkeypress = function (e){
+        e = e || window.event;
+        if(e.keyCode === 13){
+          document.documentElement.classList.toggle('dark-mode');
+    
+          document.querySelectorAll('.inverted').forEach((result) => {
+            result.classList.toggle('invert');
+          })
+        }
+      }
+    </script>
 </body>
 </html>
