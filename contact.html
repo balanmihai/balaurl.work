@@ -14,8 +14,8 @@
 
   <header>
     <a href="index.html"><h3 class="left">back home</h3></a>
-    <img class="logo" src="./logo.png" alt="">
-    <h3 class="right">mihai bălan</h3>
+    <img class="logo inverted" src="./logo.png" alt="">
+    <h3 class="right">Mihai Bălan</h3>
   </header>
 
 
@@ -43,8 +43,8 @@
     </div>
 
     <div class="info">
-      <h1 class="progress">Let's create progress together</h1>
-      <h3 class="open">open for collaborations</h3>
+      <h1 class="progress">Let's create progress together!</h1>
+      <h3 class="open">open for collaborations.</h3>
       <!-- <h1 class="available">available for hire from September 2020</h1> -->
       <h1 class="available">Frontend, UX/UI, Film Photographer</h1>
       <h1 class="email">available for hire from September 2020</h1>
@@ -70,5 +70,17 @@
     AOS.init();
   </script>
   <script src="dist/magic_mouse.js"></script>
+  <script>
+    document.onkeypress = function (e){
+      e = e || window.event;
+      if(e.keyCode === 13){
+        document.documentElement.classList.toggle('dark-mode');
+  
+        document.querySelectorAll('.inverted').forEach((result) => {
+          result.classList.toggle('invert');
+        })
+      }
+    }
+  </script>
 </body>
 </html>
