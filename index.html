@@ -32,14 +32,15 @@
         I am a self taught student with great interest in Web Development and UI/UX Design.</h1>
         <h3>Constantly studying, implementing bonafide technologies, working with new trends, experimenting creative layouts, wise solutions for clean code, responsiveness and showcasing methods.</h3>
       </div>
-      <div class="photo magic-hover magic-hover__square">
-        <img class="poza" src="./images/pic1.jpeg" alt="saluut">
+      <div class="photo">
+        <img class="poza magic-hover magic-hover__square inverted" src="./images/pic1.jpeg" alt="saluut">
       </div>
 
     </section>
     
     <footer>
       <a href="#thirdp"><h3 class="left-down">analogue gallery</h3></a>
+      <a href="#"><h3 class="announce">press 'ENTER' for Dark Mode</h3></a>
       <a href="#secondp"><h3 class="right-down">selected work</h3></a>
     </footer>
 
@@ -59,33 +60,33 @@
 
     <div class="workcontent1" data-aos="fade-up"
     data-aos-duration="2000">
-      <img src="./images/mara2.png" alt="">
+      <img class="inverted" src="./images/mara2.png" alt="">
       <h1 class="title">The portfolio of Graphic Designer Mara Bianca Pascu
         2020</h1>
-      <a href="https://marabianca.github.io/portofolio./index.html"><h3 class="link">marabianca.github.io</h3></a>
+      <a href="https://marabianca.github.io/portofolio./index.html" target="blank"><h3 class="link">marabianca.github.io</h3></a>
       <h3 class="tech">Tech. HTML CSS REACT PHP</h3>
     </div>
 
     <div class="workcontent2" data-aos="fade-up"
     data-aos-duration="2000">
-      <img src="./images/quisinbun.png" alt="">
+      <img class="inverted" src="./images/quisinbun.png" alt="">
       <h1 class="title">Digital Restaurant Menu concept for upcoming brand Quisin 2020</h1>
-      <a href="https://quisin.co/"><h3 class="link">quisin.co</h3></a>
+      <a href="https://quisin.co/" target="blank"><h3 class="link">quisin.co</h3></a>
       <h3 class="tech">Tech. BOOTSTRAP HTML CSS PHP</h3>
     </div>
 
     <div class="workcontent3" data-aos="fade-up"
     data-aos-duration="2000">
-      <img src="./images/balauru2.png" alt="">
-      <h1 class="title">Analogue Film Photography Gallery with a modern perspective</h1>
-      <a href="#"><h3 class="link">balaurul35mm.com</h3></a>
-      <h3 class="tech">Tech. HTML CSS REACT PHP</h3>
+      <img class="inverted" src="./images/monroebun.png" alt="">
+      <h1 class="title">Website for UK Music Producer and Artist, Tudor Monroe @copyright 2020</h1>
+      <a href="https://balanmihai.github.io/TudorMonroe/" target="blank"><h3 class="link">tudormonroe.uk</h3></a>
+      <h3 class="tech">Tech. HTML CSS Node.JS Jquery PHP</h3>
     </div>
 
     </section>
     <footer>
       <a href="https://www.instagram.com/balahype/" target="_blank"><h3>@balaurl.work</h3></a>
-      <h3 class="updated">UPDATED AUG. 2020</h3>
+      <h3 class="updated">UPDATED SEPT. 2020</h3>
       <a href="#about"><h3>about me</h3></a>
     </footer>
     </div>
@@ -107,15 +108,15 @@
         </div>
           <a class="photo1" href="gallery.html" data-aos="fade-up"
           data-aos-duration="2000">
-            <img class="poza" alt="salut" src="./images/zebra1.png">
+            <img class="poza inverted" alt="salut" src="./images/zebra1.png">
           </a>
           <a class="photo2" href="gallery.html" data-aos="fade-up"
           data-aos-duration="2000">
-          <img class="poza" alt="salut" src="./images/etti.png">
+          <img class="poza inverted" alt="salut" src="./images/etti.png">
           </a>
           <a class="photo3" href="gallery.html" data-aos="fade-up"
           data-aos-duration="2000">
-          <img class="poza" alt="salut" src="./images/taximetrist1.png">
+          <img class="poza inverted" alt="salut" src="./images/taximetrist1.png">
           </a>
       
           <button class="btngallery" class="magic-hover magic-hover__square">
@@ -232,6 +233,17 @@ crossorigin="anonymous"
 ></script>
 <script src="./app.js"></script>
 <script src="dist/magic_mouse.js"></script>
+<script>
+  document.onkeypress = function (e){
+    e = e || window.event;
+    if(e.keyCode === 13){
+      document.documentElement.classList.toggle('dark-mode');
 
+      document.querySelectorAll('.inverted').forEach((result) => {
+        result.classList.toggle('invert');
+      })
+    }
+  }
+</script>
 </body>
 </html>
