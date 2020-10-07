@@ -7,10 +7,12 @@
   <script src="javascript.js"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="grain.css">
   <link href="dist/magic-mouse.css" rel="stylesheet" />
   <title>Bălan Mihai</title>
 </head>
 <body>
+<main>
 <div class="portofolio">
 
 <!-- FIRST PAGE -->
@@ -26,7 +28,7 @@
     <section class="page" >
       <div class="details" data-aos="fade-right"
       data-aos-duration="1000">
-        <h1 class="hello">Ey there! I'm Mihai.<span class="wave inverted">👋🏼</span>
+        <h1 class="hello"><span id="greating"></span> I'm Mihai.<span class="wave inverted">👋🏼</span>
         </h1>
         <h1 class="self">
         I am a self taught student with great interest in Web Development and UI/UX Design.</h1>
@@ -71,7 +73,7 @@
     data-aos-duration="2000">
       <img class="inverted" src="./images/quisinbun.png" alt="">
       <h1 class="title">Digital Restaurant Menu concept for upcoming brand Quisin 2020</h1>
-      <a href="https://www.quisin.co/GreenGardenMenu.php" target="blank"><h3 class="link">quisin.co</h3></a>
+      <a href="https://quisin.co/" target="blank"><h3 class="link">quisin.co</h3></a>
       <h3 class="tech">Tech. BOOTSTRAP HTML CSS PHP</h3>
     </div>
 
@@ -86,7 +88,7 @@
     </section>
     <footer>
       <a href="https://www.instagram.com/balahype/" target="_blank"><h3>@balaurl.work</h3></a>
-      <h3 class="updated">UPDATED SEPT. 2020</h3>
+      <h3 class="updated">UPDATED on OCTOBER 2020</h3>
       <a href="#about"><h3>about me</h3></a>
     </footer>
     </div>
@@ -129,6 +131,31 @@
       <a href="#about"><h3>about me</h3></a>
     </footer>
   </div>
+
+
+<!-- SPOTIFY -->
+
+  <div class="spotify" id="spotifyp">
+
+    <header>
+      <a href="#about"><h3 class="left">about me</h3></a>
+      <h3 class="logo">mihai bălan</h3>
+      <a href="contact.html"><h3 class="right">contact</h3></a>
+    </header>
+    <section class="page">
+
+      <iframe src="https://open.spotify.com/embed/playlist/6vTLl9pAJTlgGifXNfK1bS" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+    </section>
+    
+    <footer>
+      <a href="#thirdp"><h3 class="left-down">analogue gallery</h3></a>
+      <a href="#"><h3 class="announce">press 'ENTER' for Dark Mode</h3></a>
+      <a href="#secondp"><h3 class="right-down">selected work</h3></a>
+    </footer>
+
+  </div>
+
 
 
 
@@ -200,6 +227,10 @@
         <a href="#thirdp">03</a>
       </div>
 
+      <div class="page-4">
+        <a href="#spotifyp">04</a>
+      </div>
+
     </div>
 </div>
 
@@ -210,15 +241,15 @@
       <span class="text">Creating Inovation</span>
     </h1>
     <h1 class="hide">
-      <span class="text">Art and Development</span>
+      <span class="text">Development and Design</span>
     </h1>
     <h1 class="hide">
       <span class="text">for You.</span>
     </h1>
   </div>
 </div>
-<!-- <div class="slider"></div> -->
 
+</main>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -233,6 +264,8 @@ crossorigin="anonymous"
 ></script>
 <script src="./app.js"></script>
 <script src="dist/magic_mouse.js"></script>
+
+<!-- DARK MODE -->
 <script>
   document.onkeypress = function (e){
     e = e || window.event;
@@ -245,5 +278,17 @@ crossorigin="anonymous"
     }
   }
 </script>
+
+<script>
+  var dt = new Date().getHours();
+      if (dt >= 0 && dt <= 11){
+       document.getElementById("greating").innerHTML='Good morning!'
+      }else if (dt >= 12 && dt <= 17){
+          document.getElementById("greating").innerHTML='Good afternoon!'
+      }else {
+          document.getElementById("greating").innerHTML='Good evening!'
+      }
+  </script>
+
 </body>
 </html>
